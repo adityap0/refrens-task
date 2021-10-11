@@ -16,7 +16,7 @@ class SearchPage extends React.Component {
   }
   componentDidMount() {
     //When the component is loaded the users are stored into users state
-    fetch(`http://localhost:3000/users/search`)
+    fetch(`https://refrens-task-backend.herokuapp.com/users/search`)
       .then((res) => res.json())
       .then((users) => {
         this.setState({ users });

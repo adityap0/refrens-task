@@ -19,7 +19,7 @@ class NewUser extends React.Component {
       items: "",
       pin: "",
     });
-    fetch("http://localhost:3000/users/new", {
+    fetch("https://refrens-task-backend.herokuapp.com/users/new", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
